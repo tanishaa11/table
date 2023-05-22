@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML Form</title>
+        <style>
+        body{
+            background-color: lavender;
+            font-size: 18px;
+            }
+        form{
+            background-color: white;
+            padding: 50px;
+            margin: 10px 50px;
+            width: 500px;
+            }
+    /* input{
+           height: 30px;
+           width: 200px;
+           border-radius: 5px;
+           float: right;
+        } */
+        .button{
+            background-color: rgba(238, 244, 238, 0);
+            height: 40px;
+            color: red;
+            text-transform: uppercase;
+            font-size: large;
+            border: 2px solid red;
+        }
+        </style>
+    </head>
+    <body>
+        <form>
+            <h1>REGISTRATION FORM</h1><br>
+            <p>Enter you details below</p><br>
+            <label for="fullname">Full Name : </label>
+            <input type="text" placeholder="Enter your name" id="fullname" value="TANISHA">
+            <br><br>
+            <label for="pass">Password : </label>
+            <input type="password" id="pass">
+            <br><br>
+            <label for="mail">Email : </label>
+            <input type="email" id="mail">
+            <br><br>
+            <label for="color">Please enter your color value : </label>
+            <input id="color" type="color">
+            <br><br>
+            <label for="DOB">Enter your date of birth : </label>
+            <input id="DOB"  type="date"  min="1991-01-01">
+            <br><br>
+            <label for="datetime">Enter your meeting date and time :</label>
+            <input type="datetime-local" id="datetime">
+            <br><br>
+            <label for="resume">Please upload your resume : </label>
+            <input type="file" id="resume" multiple>
+            <br><br>
+            <input type="hidden" value="3168" id="studentid">
+            <label for="hithub">Enter your Github URL :</label>
+            <input type="url" id="github">
+            <br>
+            <p>Please select your gender : </p>
+            <input type="radio" id="male" name="gender">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" >
+            <label for="female">Female</label>
+            <br>
+            <p>Please select your favourite food item : </p>
+            <input type="checkbox" id="Pizza"><label for="Pizza">Pizza</label>
+            <input type="checkbox" id="Burger"><label for="Burger">Burger</label>
+            <input type="checkbox" id="Pasta"><label for="Pasta">Pasta</label>
+            <input type="checkbox" id="Sandwich"><label for="Sandwich">Sandwich</label>
+            <br><br>
+            <label for="schoolclass">Please select your class</label>
+            <select id="schoolclass">
+            <optgroup label="Class 1">
+            <option>Section A</option>
+            <option>Section B</option>
+            <option>Section C</option>
+            </optgroup>
+            <option value="2">Class 2</option>
+            <option>Class 3</option>
+            <option disabled>Class 4</option>
+            <option>Class 5</option>
+            <option>Class 6</option>
+            <option>Class 7</option>
+            </select>
+            <br><br>
+            <label for="query">Please write your Query</label>
+            <textarea id="query" rows="10" cols="50"></textarea>
+            <br><br>
+            <input type="reset" class="button" value="Reset Me">
+            <!-- <input type="image" src="/images/586383c67d90850fc3ce2914.png" width="60px"> -->
+            <input type="submit" value="Login" class="button"> 
+        </form>
+    </body>
+</html>
